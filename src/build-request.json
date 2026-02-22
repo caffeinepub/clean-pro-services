@@ -1,0 +1,99 @@
+{
+  "kind": "build_request",
+  "title": "Add booking system and service area display for Llano and Burnet counties",
+  "projectName": "Nikole Maligranda Attention to Detail",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Create a booking system component that allows customers to schedule cleaning services online, including fields for customer name, contact information, preferred service type (residential, commercial, car detailing, carpet cleaning), preferred date and time, and service address",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-booking-request"
+        ],
+        "quotes": [
+          "add booking system"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Booking form includes fields for name, email, phone, service type selection, date, time, and address",
+        "Form validates all required fields before submission",
+        "Successful bookings are stored in the backend",
+        "User receives confirmation message after successful booking submission"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Add backend data model and functions to store and retrieve booking information including customer details, service type, preferred date and time, and service address",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-booking-request"
+        ],
+        "quotes": [
+          "add booking system"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend defines a Booking record type with all necessary fields",
+        "Backend provides a function to submit new bookings",
+        "Backend provides functions to retrieve bookings by ID and list all bookings",
+        "Bookings are persisted in stable storage"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Display service area information prominently on the website showing that services are available in Llano and Burnet counties",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-booking-request"
+        ],
+        "quotes": [
+          "service area is llano and burnet county's"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Service area information is visible on the homepage or a dedicated section",
+        "Display clearly states coverage of Llano County and Burnet County",
+        "Service area information is styled consistently with the existing visual theme"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Add navigation link and section for the booking system so customers can easily find and access the online booking form",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-booking-request"
+        ],
+        "quotes": [
+          "add booking system"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation component includes a link to the booking section",
+        "Link scrolls smoothly to the booking form when clicked",
+        "Booking section is integrated into the main App.tsx component flow"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use the existing backend actor pattern in backend/main.mo with Map for storage",
+    "Follow the existing ContactForm component pattern for building the booking form",
+    "Maintain the current single-actor architecture",
+    "Use the existing OKLCH color system and visual theme"
+  ],
+  "nonGoals": [
+    "Payment processing or pricing calculations",
+    "Calendar integration with external services",
+    "Email notifications for bookings",
+    "Admin dashboard for managing bookings",
+    "Real-time availability checking"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

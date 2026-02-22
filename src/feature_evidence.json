@@ -1,0 +1,61 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-booking-system-component-that-allows-customers-to-schedule-cleaning-services-online-including-fields-for-customer-name-contact-information-preferred-service-type-residential-commercial-car-detailing-carpet-cleaning-preferred-date-and-time-and-service-address",
+      "featureTitle": "Create a booking system component that allows customers to schedule cleaning services online, including fields for customer name, contact information, preferred service type (residential, commercial, car detailing, carpet cleaning), preferred date and time, and service address",
+      "files": [
+        "frontend/src/components/BookingForm.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-service-area-information-prominently-on-the-website-showing-that-services-are-available-in-llano-and-burnet-counties",
+      "featureTitle": "Display service area information prominently on the website showing that services are available in Llano and Burnet counties",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ServiceArea.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-navigation-link-and-section-for-the-booking-system-so-customers-can-easily-find-and-access-the-online-booking-form",
+      "featureTitle": "Add navigation link and section for the booking system so customers can easily find and access the online booking form",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

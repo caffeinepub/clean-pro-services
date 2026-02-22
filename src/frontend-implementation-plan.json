@@ -1,0 +1,66 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add booking system and service area display for Llano and Burnet counties",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Create a booking system component that allows customers to schedule cleaning services online with all required fields",
+      "acceptanceCriteria": [
+        "Booking form includes fields for name, email, phone, service type selection, date, time, and address",
+        "Form validates all required fields before submission",
+        "Successful bookings are stored in the backend",
+        "User receives confirmation message after successful booking submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BookingForm.tsx",
+          "operation": "create",
+          "description": "Create a booking form component following the ContactForm.tsx pattern with fields for customer name, email, phone, service type dropdown (residential, commercial, car detailing, carpet cleaning), date picker, time input, and service address textarea. Implement form validation, loading states, success/error alerts, and backend actor integration using useActor hook. Map service types to backend ServiceType enum (residentialCleaning, commercialCleaning, carDetailing, carpetCleaning) and convert date/time to Time (bigint nanoseconds). Call backend createBooking function and display booking ID confirmation on success."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Display service area information prominently showing services available in Llano and Burnet counties",
+      "acceptanceCriteria": [
+        "Service area information is visible on the homepage or a dedicated section",
+        "Display clearly states coverage of Llano County and Burnet County",
+        "Service area information is styled consistently with the existing visual theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ServiceArea.tsx",
+          "operation": "create",
+          "description": "Create a ServiceArea component displaying service coverage for Llano County and Burnet County with a heading, descriptive text, and styled cards or badges for each county. Use the existing OKLCH color system from frontend/src/index.css for consistent theming with primary and accent colors. Include icons or visual elements to make the section prominent and easy to locate."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and integrate the ServiceArea component into the main application flow. Position it prominently after the HeroSection and before ServiceGrid to ensure visibility. Add an id attribute (e.g., 'service-area') to enable smooth scrolling navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Add navigation link and section for the booking system so customers can easily access the online booking form",
+      "acceptanceCriteria": [
+        "Navigation component includes a link to the booking section",
+        "Link scrolls smoothly to the booking form when clicked",
+        "Booking section is integrated into the main App.tsx component flow"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Add a navigation link labeled 'Book Now' or 'Schedule Service' to the existing navigation menu. Configure smooth scroll behavior to target the booking section using an anchor ID (e.g., '#booking'). Ensure the link appears in both desktop and mobile Sheet menu layouts following the existing navigation pattern."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and add the BookingForm component to the main application flow. Position it after the service detail sections and before the ContactForm. Wrap it in a section element with an id='booking' attribute to enable smooth scroll navigation from the navigation link. Include a heading above the form such as 'Schedule Your Service' for context."
+        }
+      ]
+    }
+  ]
+}

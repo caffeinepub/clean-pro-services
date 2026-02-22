@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component with navigation, hero section, service area display, service grid, four service detail sections, booking form, contact form, and footer with updated company name and service area integration.",
+  "frontend/src/components/Navigation.tsx": "Sticky header navigation component with updated company name, smooth scroll links to service area and service sections, and \"Book Now\" CTA button that scrolls to the booking form.",
+  "frontend/src/components/HeroSection.tsx": "Hero section with background image, updated company name \"Nikole Maligranda Attention to Detail\" as the main headline, description, and call-to-action buttons for getting quotes and exploring services",
+  "frontend/src/components/ServiceGrid.tsx": "Grid of four service cards (residential, commercial, car detailing, carpet cleaning) with icons and descriptions that scroll to respective sections when clicked.",
+  "frontend/src/components/services/ResidentialService.tsx": "Detailed residential cleaning service section with icon, description, feature list, and benefits displayed in a two-column layout.",
+  "frontend/src/components/services/CommercialService.tsx": "Commercial cleaning service section showcasing features, target industries with icons, and comprehensive service offerings.",
+  "frontend/src/components/services/CarDetailingService.tsx": "Car detailing service section with three pricing packages (Basic, Premium, Deluxe) displayed in cards with feature lists.",
+  "frontend/src/components/services/CarpetCleaningService.tsx": "Carpet cleaning service section highlighting cleaning methods with icons and comprehensive benefits list.",
+  "frontend/src/components/ContactForm.tsx": "Contact form component with name, email, phone, service type dropdown, and message fields for general inquiries (note: actual bookings should use the BookingForm component as the backend no longer has contact form submission functionality).",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for managing bookings including fetching all bookings, individual bookings by ID, bookings by customer name, and creating new bookings with cache invalidation.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using fresh green primary and warm orange accent colors for a professional cleaning company aesthetic.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens, Inter font family, custom border radius, and enhanced box shadows for the design system.",
+  "frontend/index.html": "HTML entry point with updated page title to \"Nikole Maligranda Attention to Detail\"",
+  "frontend/src/components/ServiceArea.tsx": "Service area component displaying coverage for Llano County and Burnet County with icons, badges, and descriptive text in a two-column card layout.",
+  "frontend/src/components/BookingForm.tsx": "Booking form component with fields for customer name, email, phone, service type dropdown, date/time pickers, and service address that submits to backend with success/error handling and displays booking ID confirmation."
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Website for a residential and commercial cleaning company offering car detailing and carpet cleaning services, serving Llano and Burnet counties with online booking system",
+  "architectural_notes": [
+    "Service area limited to Llano and Burnet counties in Texas"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-that-introduces-the-cleaning-company-with-a-hero-section-highlighting-residential-cleaning-commercial-cleaning-car-detailing-and-carpet-cleaning-services",
+      "title": "Create a homepage that introduces the cleaning company with a hero section highlighting residential cleaning, commercial cleaning, car detailing, and carpet cleaning services",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-section-or-page-showcasing-residential-cleaning-services-with-description-key-features-and-benefits",
+      "title": "Create a dedicated section or page showcasing residential cleaning services with description, key features, and benefits",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-section-or-page-showcasing-commercial-cleaning-services-with-description-key-features-and-target-industries",
+      "title": "Create a dedicated section or page showcasing commercial cleaning services with description, key features, and target industries",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-section-or-page-showcasing-car-detailing-services-with-description-service-packages-and-what-s-included",
+      "title": "Create a dedicated section or page showcasing car detailing services with description, service packages, and what's included",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-section-or-page-showcasing-carpet-cleaning-services-with-description-cleaning-methods-and-benefits",
+      "title": "Create a dedicated section or page showcasing carpet cleaning services with description, cleaning methods, and benefits",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-section-with-a-contact-form-for-service-inquiries-including-fields-for-name-email-phone-service-type-selection-and-message",
+      "title": "Create a contact section with a contact form for service inquiries including fields for name, email, phone, service type selection, and message",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-creative-and-professional-visual-theme-with-a-cohesive-color-palette-typography-and-layout-that-conveys-trust-and-cleanliness-avoiding-blue-and-purple-unless-specifically-requested",
+      "title": "Implement a creative and professional visual theme with a cohesive color palette, typography, and layout that conveys trust and cleanliness, avoiding blue and purple unless specifically requested",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-html-page-title-from-clean-pro-services-to-nikole-maligranda-attention-to-detail-in-frontend-index-html",
+      "title": "Update the HTML page title from 'Clean Pro Services' to 'Nikole Maligranda Attention to Detail' in frontend/index.html",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-company-name-in-the-navigation-component-to-display-nikole-maligranda-attention-to-detail-instead-of-the-current-brand-name",
+      "title": "Update the company name in the Navigation component to display 'Nikole Maligranda Attention to Detail' instead of the current brand name",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-herosection-component-to-reference-nikole-maligranda-attention-to-detail-in-the-headline-or-introductory-text",
+      "title": "Update the HeroSection component to reference 'Nikole Maligranda Attention to Detail' in the headline or introductory text",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-any-footer-or-contact-section-references-to-the-company-name-to-use-nikole-maligranda-attention-to-detail",
+      "title": "Update any footer or contact section references to the company name to use 'Nikole Maligranda Attention to Detail'",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-booking-system-component-that-allows-customers-to-schedule-cleaning-services-online-including-fields-for-customer-name-contact-information-preferred-service-type-residential-commercial-car-detailing-carpet-cleaning-preferred-date-and-time-and-service-address",
+      "title": "Create a booking system component that allows customers to schedule cleaning services online, including fields for customer name, contact information, preferred service type (residential, commercial, car detailing, carpet cleaning), preferred date and time, and service address",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-service-area-information-prominently-on-the-website-showing-that-services-are-available-in-llano-and-burnet-counties",
+      "title": "Display service area information prominently on the website showing that services are available in Llano and Burnet counties",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-navigation-link-and-section-for-the-booking-system-so-customers-can-easily-find-and-access-the-online-booking-form",
+      "title": "Add navigation link and section for the booking system so customers can easily find and access the online booking form",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create website showcasing residential cleaning services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create website showcasing commercial cleaning services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Create website showcasing car detailing services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Create website showcasing carpet cleaning services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add online booking system for scheduling cleaning services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Display service area information showing coverage of Llano and Burnet counties",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add backend data model and functions to store and retrieve booking information including customer details, service type, preferred date and time, and service address",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Clean Pro Services",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
